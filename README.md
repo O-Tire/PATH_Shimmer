@@ -3,6 +3,8 @@
 2. Easily add apps to PATH using commands only.
 3. Easily remove apps from PATH using commands only.
 
+<img width="1188" height="193" alt="path_shimmer_icon" src="https://github.com/user-attachments/assets/85681f1d-50da-4e83-8b53-1d81f38a631c" />
+
 **How to install:**
 1. Download the latest release.
 2. Extract the .rar file.
