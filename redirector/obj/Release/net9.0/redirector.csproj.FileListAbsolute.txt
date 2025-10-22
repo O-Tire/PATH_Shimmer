@@ -46,3 +46,4 @@ E:\-Code Projects\C#\PATH Shimmer\redirector\obj\Release\net9.0\refint\redirecto
 E:\-Code Projects\C#\PATH Shimmer\redirector\obj\Release\net9.0\redirector.pdb
 E:\-Code Projects\C#\PATH Shimmer\redirector\obj\Release\net9.0\redirector.genruntimeconfig.cache
 E:\-Code Projects\C#\PATH Shimmer\redirector\obj\Release\net9.0\ref\redirector.dll
+E:\-Code Projects\C#\PATH Shimmer\redirector\obj\Release\net9.0\redirector.sourcelink.json

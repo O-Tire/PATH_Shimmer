@@ -1,0 +1,15 @@
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\bin\Release\net9.0\path_shimmer.exe
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\bin\Release\net9.0\path_shimmer.deps.json
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\bin\Release\net9.0\path_shimmer.runtimeconfig.json
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\bin\Release\net9.0\path_shimmer.dll
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\bin\Release\net9.0\path_shimmer.pdb
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\path_shimmer.GeneratedMSBuildEditorConfig.editorconfig
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\path_shimmer.AssemblyInfoInputs.cache
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\path_shimmer.AssemblyInfo.cs
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\path_shimmer.csproj.CoreCompileInputs.cache
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\path_shimmer.sourcelink.json
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\path_shimmer.dll
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\refint\path_shimmer.dll
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\path_shimmer.pdb
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\path_shimmer.genruntimeconfig.cache
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Release\net9.0\ref\path_shimmer.dll
