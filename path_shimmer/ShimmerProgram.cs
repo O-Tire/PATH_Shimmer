@@ -57,14 +57,12 @@ class ShimmerProgram
     static void DisplayGuide()
     {
         Console.WriteLine(
-            $"\n\n1. Manually add the directory of this program (path_shimmer{EXECUTABLE_EXTENSION}) to PATH.\n" +
-            $"2. After that run this program, press 1, then write the path of the " +
-            $"{EXECUTABLE_EXTENSION} file which you wish to be registered in the system's search list.\n" +
-            $"And that's it! Now you can add individual {EXECUTABLE_EXTENSION} programs (instead of whole directories) " +
-            $"and keep your PATH list clean.\n" +
-            $"*If you ever want to remove a program from the search list, go to the root directory of " +
-            $"path_shimmer{EXECUTABLE_EXTENSION} and remove the {EXECUTABLE_EXTENSION} and .cfg files that are named after " +
-            $"that program. (there must be only two files)");
+            $"\n\nHow to use PATH Shimmer:\n" +
+            $"1. Manually add the root directory of this program (path_shimmer{EXECUTABLE_EXTENSION}) to PATH.\n" +
+            $"2. After that, run this program, press 1, then write the path of the " +
+            $"{EXECUTABLE_EXTENSION} file which you wish to be registered in the system's search list. And that is it.\n" +
+            $"3. If you want to remove a program from the search list, press 3 instead. Then only write the name of the program" +
+            $"and press enter. (e.g. my_program NOT my_program{EXECUTABLE_EXTENSION} OR C:/Folder/my_program{EXECUTABLE_EXTENSION})");
 
         Console.WriteLine("\n\nPress any key to exit...");
         Console.ReadKey();

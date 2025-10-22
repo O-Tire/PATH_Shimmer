@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("path_shimmer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d97d00cf1f40c9b4355f238f5b003c0c22ee1a6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4297b4612222fb1ede742fe50111b245b599215")]
 [assembly: System.Reflection.AssemblyProductAttribute("path_shimmer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("path_shimmer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
