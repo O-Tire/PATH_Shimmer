@@ -12,3 +12,4 @@ E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Debug\net9.0\refint\path_shim
 E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Debug\net9.0\path_shimmer.pdb
 E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Debug\net9.0\path_shimmer.genruntimeconfig.cache
 E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Debug\net9.0\ref\path_shimmer.dll
+E:\-Code Projects\C#\PATH Shimmer\path_shimmer\obj\Debug\net9.0\path_shimmer.sourcelink.json

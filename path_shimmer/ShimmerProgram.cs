@@ -1,22 +1,40 @@
-﻿class ShimmerProgram
+﻿using System.Text;
+
+class ShimmerProgram
 {
     const string EXECUTABLE_EXTENSION = ".exe";
     
     static void Main(string[] args)
     {
         Console.WriteLine("--Welcome to path shimmer--");
-        Console.WriteLine("Press 1 to add a PATH.");
+        Console.WriteLine($"Press 1 to register a {EXECUTABLE_EXTENSION} to system's search list. (add to PATH)");
         Console.WriteLine("Press 2 for quick guide.");
         
-        char userInput = Console.ReadKey(true).KeyChar;
+        char userInputNum = Console.ReadKey(true).KeyChar;
 
-        if (userInput == '1')
+        if (userInputNum == '1')
         {
-            // TODO: Add a PATH
+            // Instantiate redirector.
+            Console.WriteLine($"\n\nWrite the path to the {EXECUTABLE_EXTENSION} which you want to registered.");
+            
+            string targetFile = Console.ReadLine()!.Trim();
+            string rootDir = Path.GetDirectoryName(Environment.ProcessPath!)!;
+            string fileToCopy = rootDir + $"/tools/redirector{EXECUTABLE_EXTENSION}";
+            string fileToPaste = rootDir + "/" + Path.GetFileName(targetFile);
+            
+            File.Copy(fileToCopy, fileToPaste, true);
+            
+            // Add config.
+            FileStream fs = File.Create(rootDir + "/" + Path.GetFileNameWithoutExtension(targetFile) + ".cfg");
+            fs.Write(Encoding.UTF8.GetBytes(targetFile), 0, targetFile.Length);
+            fs.Close();
+
+            Console.WriteLine("File was successfully registered.\nPress any key to exit...");
+            Console.ReadKey();
             return;
         }
 
-        if (userInput == '2')
+        if (userInputNum == '2')
         {
             // Show guide
             Console.WriteLine(
