@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("redirector")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6afb8e6f2e7f4a1ef97c714a9e7422caa8e0d8d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d97d00cf1f40c9b4355f238f5b003c0c22ee1a6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("redirector")]
 [assembly: System.Reflection.AssemblyTitleAttribute("redirector")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
