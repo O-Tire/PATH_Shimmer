@@ -10,6 +10,7 @@ class ShimmerProgram
         Console.WriteLine($"Press 1 to register an {EXECUTABLE_EXTENSION} to system's search list. (add to PATH)");
         Console.WriteLine("Press 2 for quick guide.");
         Console.WriteLine($"Press 3 to unregister an {EXECUTABLE_EXTENSION} from system's search list. (remove from PATH)");
+        Console.WriteLine("Press 4 to print a list of all registered apps. (apps which are being redirected by PATH Shimmer)");
         
         char userInputNum = Console.ReadKey(true).KeyChar;
 
@@ -26,6 +27,11 @@ class ShimmerProgram
         if (userInputNum == '3')
         {
             RemoveRedirector();
+        }
+
+        if (userInputNum == '4')
+        {
+            PrintRegisteredApps();
         }
         
         Console.WriteLine("Invalid key detected.");
@@ -58,11 +64,11 @@ class ShimmerProgram
     {
         Console.WriteLine(
             $"\n\nHow to use PATH Shimmer:\n" +
-            $"1. Manually add the root directory of this program (path_shimmer{EXECUTABLE_EXTENSION}) to PATH.\n" +
-            $"2. After that, run this program, press 1, then write the path of the " +
+            $"Step 1: Manually add the root directory of this program (path_shimmer{EXECUTABLE_EXTENSION}) to PATH.\n" +
+            $"Step 2: After that, run this program, press 1, then write the path of the " +
             $"{EXECUTABLE_EXTENSION} file which you wish to be registered in the system's search list. And that is it.\n" +
-            $"3. If you want to remove a program from the search list, press 3 instead. Then only write the name of the program" +
-            $"and press enter. (e.g. my_program NOT my_program{EXECUTABLE_EXTENSION} OR C:/Folder/my_program{EXECUTABLE_EXTENSION})");
+            $"Step 3: If you want to remove a program from the search list, press 3 instead. Then only write the name of the program" +
+            $"and press enter. (e.g. my_program NOT my_program{EXECUTABLE_EXTENSION} NOR C:/Folder/my_program{EXECUTABLE_EXTENSION})");
 
         Console.WriteLine("\n\nPress any key to exit...");
         Console.ReadKey();
@@ -99,6 +105,23 @@ class ShimmerProgram
         }
 
         EndProgram:
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
+        Environment.Exit(0);
+    }
+
+    static void PrintRegisteredApps()
+    {
+        string[] filePaths = Directory.GetFiles(Path.GetDirectoryName(Environment.ProcessPath!)!);
+
+        Console.WriteLine("Found items:");
+        foreach (string filePath in filePaths)
+        {
+            if (!filePath.EndsWith(EXECUTABLE_EXTENSION) || filePath.EndsWith("path_shimmer" + EXECUTABLE_EXTENSION)) continue;
+
+            Console.WriteLine("-" + Path.GetFileNameWithoutExtension(filePath));
+        }
+        
         Console.WriteLine("Press any key to exit...");
         Console.ReadKey();
         Environment.Exit(0);
